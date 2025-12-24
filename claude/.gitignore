@@ -34,3 +34,6 @@ commands/git/scripts/bin/ja2romaji
 
 # Cache
 stats-cache.json
+
+# Chrome DevTools integration
+chrome/

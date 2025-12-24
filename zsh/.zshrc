@@ -111,6 +111,5 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# anyenv (manages nodenv, pyenv, rbenv, goenv)
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+# ローカル設定を読み込み（秘密情報など、git管理外）
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

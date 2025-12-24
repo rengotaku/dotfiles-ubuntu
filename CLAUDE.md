@@ -51,3 +51,15 @@ Mac-like keyboard remapping for Linux:
 - Meta+Tab → Application switching
 
 Requires: `gsettings set org.gnome.mutter overlay-key ''` to disable GNOME overlay.
+
+## Security Rules
+
+**This repository is PUBLIC.** Before committing, verify files contain no sensitive information:
+
+- API keys, tokens, secrets, passwords
+- Webhook URLs, private endpoints
+- Personal paths with usernames (use `~` or `$HOME`)
+- Email addresses, private hostnames
+- Any credentials or authentication data
+
+Run `git diff --staged` and review each change before commit.

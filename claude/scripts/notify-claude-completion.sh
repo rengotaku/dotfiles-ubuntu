@@ -8,6 +8,11 @@ set -e
 # Slack Webhook URL
 SLACK_WEBHOOK_URL=$SLACK_WEBHOOK_URL_FOR_CLAUDE_NOTIFICATION
 
+if [ -z "$SLACK_WEBHOOK_URL" ]; then
+    echo "❌ エラー: SLACK_WEBHOOK_URL_FOR_CLAUDE_NOTIFICATION が設定されていません" >&2
+    exit 1
+fi
+
 # 基本情報取得
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 REPO_NAME="web-todo"
