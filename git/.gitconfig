@@ -1,0 +1,23 @@
+# Git Configuration
+# Note: Set user.name and user.email separately:
+#   git config --global user.name "Your Name"
+#   git config --global user.email "your@email.com"
+
+[core]
+    editor = vim
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    lg = log --oneline --graph --decorate
+[user]
+	name = takuya
+	email = g.takasu41@gmail.com

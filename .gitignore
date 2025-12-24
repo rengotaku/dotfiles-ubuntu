@@ -1,0 +1,21 @@
+# Credentials & secrets
+*.credentials*
+*secret*
+*token*
+.env
+
+# Claude sensitive files
+claude/.credentials.json
+
+# SSH keys
+*.pem
+id_*
+*.pub
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~
