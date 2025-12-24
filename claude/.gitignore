@@ -23,6 +23,7 @@ statsig/
 backups/
 plugins/marketplaces/
 plugins/repos/
+plugins/known_marketplaces.json
 
 # Local environment files
 *.lock
