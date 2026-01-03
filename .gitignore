@@ -6,6 +6,7 @@
 
 # Claude sensitive files
 claude/.credentials.json
+claude/telemetry/
 
 # SSH keys
 *.pem

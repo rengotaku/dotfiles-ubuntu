@@ -109,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# エイリアス読み込み
+[[ -f ~/.zsh_aliases ]] && source ~/.zsh_aliases
+
 export PATH="$HOME/.local/bin:$PATH"
 
 # ローカル設定を読み込み（秘密情報など、git管理外）

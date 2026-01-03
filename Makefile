@@ -5,8 +5,11 @@ DOTFILES_DIR := $(shell pwd)
 all:
 	@echo "=== Installing dotfiles ==="
 	ln -sf $(DOTFILES_DIR)/zsh/.zshrc $(HOME)/.zshrc
+	ln -sf $(DOTFILES_DIR)/zsh/.zsh_aliases $(HOME)/.zsh_aliases
 	ln -sfn $(DOTFILES_DIR)/claude $(HOME)/.claude
 	ln -sf $(DOTFILES_DIR)/git/.gitconfig $(HOME)/.gitconfig
+	mkdir -p $(HOME)/.config/fontconfig
+	ln -sf $(DOTFILES_DIR)/fontconfig/fonts.conf $(HOME)/.config/fontconfig/fonts.conf
 	@echo "=== Done ==="
 	@echo ""
 	@echo "Set git credentials:"
@@ -22,8 +25,10 @@ keyd:
 uninstall:
 	@echo "=== Removing symlinks ==="
 	rm -f $(HOME)/.zshrc
+	rm -f $(HOME)/.zsh_aliases
 	rm -f $(HOME)/.claude
 	rm -f $(HOME)/.gitconfig
+	rm -f $(HOME)/.config/fontconfig/fonts.conf
 	@echo "=== Done ==="
 
 help:
